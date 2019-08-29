@@ -19,21 +19,15 @@ class Result
       ]
   end
 
-  def exec
-    if @score <= 3 # Выводим результат теста
-      puts @result[0]
-    elsif @score <= 8
-      puts @result[1]
-    elsif @score <= 13
-      puts @result[2]
-    elsif @score <= 18
-      puts @result[3]
-    elsif @score <= 24
-      puts @result[4]
-    elsif @score <= 29
-      puts @result[5]
-    else
-      puts @result[6]
-    end
+def exec
+  case @score
+  when <= 3 puts @result[0]
+  when <= 8 puts @result[1]
+  when <= 13 puts @result[2]
+  when <= 18 puts @result[3]
+  when <= 24 puts @result[4]
+  when <= 29 puts @result[5]
+  else
+    puts @result[6]
   end
 end

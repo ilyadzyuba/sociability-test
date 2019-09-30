@@ -1,5 +1,4 @@
 class Test
-  
   def initialize
     @score = 0 # учет ответов
     @questions = [
@@ -20,7 +19,6 @@ class Test
       "15. Просьбы помочь в учебе или работе раздражают вас?",
       "16. Вам проще изложить свое мнение на бумаге, чем рассказать о нем?"
     ]
-  
   end
 
   def exec
@@ -50,5 +48,5 @@ class Test
     end
     @score
   end
+end
 
-end 
